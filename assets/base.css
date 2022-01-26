@@ -2528,9 +2528,19 @@ details[open] > .header__icon--menu .icon-hamburger {
   transition: text-decoration var(--duration-short) ease;
 }
 
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+.header__menu-item:before{
+  position: absolute;
+  content: "";
+  top:50%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(var(--color-foreground));
+  transition: 0.3s;
+}
+
+.header__menu-item:hover:before{
+  width: 100%;
 }
 
 details[open] > .header__menu-item {
@@ -2543,17 +2553,6 @@ details[open]:hover > .header__menu-item {
 
 details[open] > .header__menu-item .icon-caret {
   transform: rotate(180deg);
-}
-
-.header__active-menu-item {
-  transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-.header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
 }
 
 .header__submenu {
