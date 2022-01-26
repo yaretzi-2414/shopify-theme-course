@@ -37,8 +37,10 @@
   }
 
   .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 
   summary.list-menu__item {
@@ -51,6 +53,10 @@
     line-height: calc(1 + 0.3 / var(--font-body-scale));
     font-family: var(--font-heading-family);
     font-size: 24px;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    color: rgb(var(--color-foreground));
   }
 
   .list-menu__item--link {

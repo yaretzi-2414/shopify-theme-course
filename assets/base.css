@@ -2165,6 +2165,17 @@ input[type='checkbox'] {
     padding-bottom: 2rem;
   }
 
+  .header-wrapper:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: rgb(var(--color-foreground));
+    z-index: 1;
+  }
+
   .header--has-menu:not(.header--middle-left) {
     padding-bottom: 0;
   }
