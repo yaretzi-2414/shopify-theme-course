@@ -1,7 +1,6 @@
 <div>
     <h1>
-        {%- assign image = 'hero-image.svg' | asset_url -%}
-        <img loading="lazy" src="{{ 'hero-image.svg' | asset_url }}"  />
+        <img loading="lazy" src="{{ 'hero-image.svg' | asset_url | asset_img_url: 'master' }}"  />
         <span>vintage & thrift</span>
     </h1>
 </div>
