@@ -18,7 +18,7 @@
                         </span>
                     </div>
                     <div class="weekly-picks__img-wrapper">
-                        <img src="{{ product.images[0].src | img_url: 'medium' }}">
+                        <img loading="lazy" src="{{ product.images[0].src | image_url: 'medium' }}">
                     </div>
                     <p class="weekly-picks__product-title">{{ product.title }}</p>
                     <div class="weekly-picks__price">
@@ -36,11 +36,12 @@
 {% schema %}
 {
     "name":"Weekly picks",
-    "settings": [
+    "settings": 
+    [
         {
             "type": "text",
             "id": "title",
-            "label": "Section titl",
+            "label": "Section title",
             "default": "Weekly picks"
         },
         {
@@ -49,10 +50,12 @@
             "label": "Collection"
         },
     ],
-    "presets": [
+    "presets": 
+    [
         {
             "name": "Weekly picks"
         }
-    ]
+    ]    
 }
 {% endschema %}
+
