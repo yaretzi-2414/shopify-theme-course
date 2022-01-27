@@ -6,7 +6,9 @@
         "f3428f1a-dfa7-4b66-893f-a9fc03673075": {
           "type": "collection",
           "settings": {
-            "collection": "beach"
+            "collection": "beach",
+            "image_bg": "shopify:\/\/shop_images\/hero-beach.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-beach-hover.png"
           }
         },
         "9ead252b-2f9c-4264-a9e9-0f6b1eb94299": {
