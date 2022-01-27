@@ -35,7 +35,7 @@
     position: relative;
 }
 
-.weekly-picks__title{
+.weekly-picks__product-title{
     text-align: center;
     color: rgb(var(--color-foreground));
 }
